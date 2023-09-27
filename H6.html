@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de registro de usuario</title>
+</head>
+<body>
+<span style="color:gray;">
+<h1>Formulario de registro de usuario</h1>
+</span>
+<form action="registro.php" method="post">
+
+  <div class="campo">
+    <span style="color:blue;">
+    <label for="nombre">Nombre de usuario:</label></span>
+    <input type="text" name="nombre" id="nombre" required>
+  </div>
+
+  <div class="campo">
+    <span style="color:orange;">
+    <label for="contraseña">Contraseña:</label></span>
+    <input type="password" name="contraseña" id="contraseña" required>
+  </div>
+
+  <div class="campo">
+    <span style="color:red;">
+    <label for="correo">Correo electrónico:</label></span>
+    <input type="email" name="correo" id="correo" required>
+  </div>
+
+  <div class="campo">
+    <span style="color:yellow;">
+    <label for="pais">País de residencia:</label></span>
+    <select name="pais" id="pais">
+      <option value="Peru">Peru</option>
+      <option value="Eu">Eu</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Chile">Chile</option>
+    </select>
+  </div>
+
+  <div class="campo">
+    <input type="submit" value="Enviar">
+  </div>
+
+</form>
+
+</body>
+</html>
